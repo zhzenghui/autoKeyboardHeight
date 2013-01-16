@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D716056316A688CE001B4819 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D716056216A688CE001B4819 /* UIKit.framework */; };
+		D716056516A688CE001B4819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D716056416A688CE001B4819 /* Foundation.framework */; };
+		D716056716A688CE001B4819 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D716056616A688CE001B4819 /* CoreGraphics.framework */; };
+		D716056D16A688CE001B4819 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D716056B16A688CE001B4819 /* InfoPlist.strings */; };
+		D716056F16A688CE001B4819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D716056E16A688CE001B4819 /* main.m */; };
+		D716057316A688CE001B4819 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D716057216A688CE001B4819 /* CPAppDelegate.m */; };
+		D716057616A688CE001B4819 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D716057516A688CE001B4819 /* CPViewController.m */; };
+		D716057916A688CE001B4819 /* CPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D716057716A688CE001B4819 /* CPViewController_iPhone.xib */; };
+		D716057C16A688CE001B4819 /* CPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D716057A16A688CE001B4819 /* CPViewController_iPad.xib */; };
+		D716058416A68AC7001B4819 /* MessageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D716058316A68AC7001B4819 /* MessageTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D716055E16A688CE001B4819 /* MessageBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D716056216A688CE001B4819 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D716056416A688CE001B4819 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D716056616A688CE001B4819 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D716056A16A688CE001B4819 /* MessageBox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MessageBox-Info.plist"; sourceTree = "<group>"; };
+		D716056C16A688CE001B4819 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D716056E16A688CE001B4819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D716057016A688CE001B4819 /* MessageBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageBox-Prefix.pch"; sourceTree = "<group>"; };
+		D716057116A688CE001B4819 /* CPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPAppDelegate.h; sourceTree = "<group>"; };
+		D716057216A688CE001B4819 /* CPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAppDelegate.m; sourceTree = "<group>"; };
+		D716057416A688CE001B4819 /* CPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
+		D716057516A688CE001B4819 /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
+		D716057816A688CE001B4819 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPhone.xib; sourceTree = "<group>"; };
+		D716057B16A688CE001B4819 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPad.xib; sourceTree = "<group>"; };
+		D716058216A68AC7001B4819 /* MessageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableView.h; sourceTree = "<group>"; };
+		D716058316A68AC7001B4819 /* MessageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D716055B16A688CE001B4819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D716056316A688CE001B4819 /* UIKit.framework in Frameworks */,
+				D716056516A688CE001B4819 /* Foundation.framework in Frameworks */,
+				D716056716A688CE001B4819 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D716055316A688CD001B4819 = {
+			isa = PBXGroup;
+			children = (
+				D716056816A688CE001B4819 /* MessageBox */,
+				D716056116A688CE001B4819 /* Frameworks */,
+				D716055F16A688CE001B4819 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D716055F16A688CE001B4819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D716055E16A688CE001B4819 /* MessageBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D716056116A688CE001B4819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D716056216A688CE001B4819 /* UIKit.framework */,
+				D716056416A688CE001B4819 /* Foundation.framework */,
+				D716056616A688CE001B4819 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D716056816A688CE001B4819 /* MessageBox */ = {
+			isa = PBXGroup;
+			children = (
+				D716057116A688CE001B4819 /* CPAppDelegate.h */,
+				D716057216A688CE001B4819 /* CPAppDelegate.m */,
+				D716057416A688CE001B4819 /* CPViewController.h */,
+				D716057516A688CE001B4819 /* CPViewController.m */,
+				D716057716A688CE001B4819 /* CPViewController_iPhone.xib */,
+				D716057A16A688CE001B4819 /* CPViewController_iPad.xib */,
+				D716056916A688CE001B4819 /* Supporting Files */,
+				D716058216A68AC7001B4819 /* MessageTableView.h */,
+				D716058316A68AC7001B4819 /* MessageTableView.m */,
+			);
+			path = MessageBox;
+			sourceTree = "<group>";
+		};
+		D716056916A688CE001B4819 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D716056A16A688CE001B4819 /* MessageBox-Info.plist */,
+				D716056B16A688CE001B4819 /* InfoPlist.strings */,
+				D716056E16A688CE001B4819 /* main.m */,
+				D716057016A688CE001B4819 /* MessageBox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D716055D16A688CE001B4819 /* MessageBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D716057F16A688CE001B4819 /* Build configuration list for PBXNativeTarget "MessageBox" */;
+			buildPhases = (
+				D716055A16A688CE001B4819 /* Sources */,
+				D716055B16A688CE001B4819 /* Frameworks */,
+				D716055C16A688CE001B4819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageBox;
+			productName = MessageBox;
+			productReference = D716055E16A688CE001B4819 /* MessageBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D716055516A688CD001B4819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D716055816A688CD001B4819 /* Build configuration list for PBXProject "MessageBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D716055316A688CD001B4819;
+			productRefGroup = D716055F16A688CE001B4819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D716055D16A688CE001B4819 /* MessageBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D716055C16A688CE001B4819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D716056D16A688CE001B4819 /* InfoPlist.strings in Resources */,
+				D716057916A688CE001B4819 /* CPViewController_iPhone.xib in Resources */,
+				D716057C16A688CE001B4819 /* CPViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D716055A16A688CE001B4819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D716056F16A688CE001B4819 /* main.m in Sources */,
+				D716057316A688CE001B4819 /* CPAppDelegate.m in Sources */,
+				D716057616A688CE001B4819 /* CPViewController.m in Sources */,
+				D716058416A68AC7001B4819 /* MessageTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D716056B16A688CE001B4819 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D716056C16A688CE001B4819 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D716057716A688CE001B4819 /* CPViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D716057816A688CE001B4819 /* en */,
+			);
+			name = CPViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		D716057A16A688CE001B4819 /* CPViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D716057B16A688CE001B4819 /* en */,
+			);
+			name = CPViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D716057D16A688CE001B4819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D716057E16A688CE001B4819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D716058016A688CE001B4819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageBox/MessageBox-Prefix.pch";
+				INFOPLIST_FILE = "MessageBox/MessageBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D716058116A688CE001B4819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageBox/MessageBox-Prefix.pch";
+				INFOPLIST_FILE = "MessageBox/MessageBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D716055816A688CD001B4819 /* Build configuration list for PBXProject "MessageBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D716057D16A688CE001B4819 /* Debug */,
+				D716057E16A688CE001B4819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D716057F16A688CE001B4819 /* Build configuration list for PBXNativeTarget "MessageBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D716058016A688CE001B4819 /* Debug */,
+				D716058116A688CE001B4819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D716055516A688CD001B4819 /* Project object */;
+}
