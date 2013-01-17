@@ -25,6 +25,47 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasHidden:) name:UIKeyboardDidHideNotification object:nil];
 }
 
+- (void)removeRerurnButton:(UIView *)keyboardView
+{
+    UIButton *doneButton = (UIButton *)[keyboardView viewWithTag:1000];
+    if (doneButton) {
+        [doneButton removeFromSuperview];   
+    }
+}
+- (void)addReturnKeyButton:(CGRect)doneButtonRect
+{
+    
+    //    http://www.neoos.ch/blog/37-uikeyboardtypenumberpad-and-the-missing-return-key
+    // create custom button
+    UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    doneButton.frame = doneButtonRect;
+    doneButton.tag = 1000;
+    doneButton.adjustsImageWhenHighlighted = NO;
+    [doneButton setImage:[UIImage imageNamed:@"DoneUp.png"] forState:UIControlStateNormal];
+    [doneButton setImage:[UIImage imageNamed:@"DoneDown.png"] forState:UIControlStateHighlighted];
+    [doneButton addTarget:self action:@selector(hiddenKeyBord:) forControlEvents:UIControlEventTouchUpInside];
+    
+    // locate keyboard view
+    UIWindow* tempWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:1];
+    UIView* keyboard;
+    for(int i=0; i<[tempWindow.subviews count]; i++) {
+        keyboard = [tempWindow.subviews objectAtIndex:i];
+        // keyboard view found; add the custom button to it
+        NSLog(@"%@", keyboard);
+        // keyboard found, add the button
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 3.2) {
+            if([[keyboard description] hasPrefix:@"<UIPeripheralHost"] == YES)
+            {   
+                [self removeRerurnButton:keyboard];
+                [keyboard addSubview:doneButton];
+            }
+        } else {
+            if([[keyboard description] hasPrefix:@"<UIKeyboard"] == YES)
+                [keyboard addSubview:doneButton];
+        }
+    }
+
+}
 
 - (void) keyboardWasShown:(NSNotification *) notif{ 
     NSDictionary *info = [notif userInfo]; 
@@ -33,20 +74,16 @@
     
     NSLog(@"keyBoard:%f", keyboardSize.height);  //216 
     
-    int height;
-    if (keyboardWasShown == YES) {
-        if (keyboardSize.height == 216) {
-            height = 252;
-        }
-        else {
-            height = 216;
-        }
-        self.view.frame = CGRectMake(0, -height+20, self.view.frame.size.width, self.view.frame.size.height);
+    CGRect doneButtonRect = CGRectMake(243-16, 174-7, 106, 53);
+    if (keyboardSize.height == 252) {
+        doneButtonRect = CGRectMake(243-16, 174-7+36, 106, 53); 
     }
-    else {
-        keyboardWasShown = NO;
-        self.view.frame = CGRectMake(0, -keyboardSize.height+20, self.view.frame.size.width, self.view.frame.size.height);
-    }
+
+    keyboardWasShown = NO;
+    self.view.frame = CGRectMake(0, -keyboardSize.height+20, self.view.frame.size.width, self.view.frame.size.height);
+    
+
+    [self addReturnKeyButton:doneButtonRect];
 } 
 - (void) keyboardWasHidden:(NSNotification *) notif{ 
     NSDictionary *info = [notif userInfo]; 
@@ -119,7 +156,7 @@
 #pragma mark message delegate
 - (void)closeKeyboard
 {
-    [messageTextField resignFirstResponder];
+//    [messageTextField resignFirstResponder];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField

@@ -17,6 +17,10 @@
 		D716057916A688CE001B4819 /* CPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D716057716A688CE001B4819 /* CPViewController_iPhone.xib */; };
 		D716057C16A688CE001B4819 /* CPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D716057A16A688CE001B4819 /* CPViewController_iPad.xib */; };
 		D716058416A68AC7001B4819 /* MessageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D716058316A68AC7001B4819 /* MessageTableView.m */; };
+		D744D00116A79DC0001559C4 /* DoneDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D744CFFF16A79DC0001559C4 /* DoneDown@2x.png */; };
+		D744D00416A79DEC001559C4 /* DoneUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D744D00316A79DEC001559C4 /* DoneUp@2x.png */; };
+		D744D01816A7BDF7001559C4 /* DoneDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D744D01616A7BDF7001559C4 /* DoneDown.png */; };
+		D744D01916A7BDF7001559C4 /* DoneUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D744D01716A7BDF7001559C4 /* DoneUp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		D716057B16A688CE001B4819 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPad.xib; sourceTree = "<group>"; };
 		D716058216A68AC7001B4819 /* MessageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableView.h; sourceTree = "<group>"; };
 		D716058316A68AC7001B4819 /* MessageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableView.m; sourceTree = "<group>"; };
+		D744CFFF16A79DC0001559C4 /* DoneDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DoneDown@2x.png"; sourceTree = "<group>"; };
+		D744D00316A79DEC001559C4 /* DoneUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DoneUp@2x.png"; sourceTree = "<group>"; };
+		D744D01616A7BDF7001559C4 /* DoneDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneDown.png; sourceTree = "<group>"; };
+		D744D01716A7BDF7001559C4 /* DoneUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 		D716056916A688CE001B4819 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D744D00316A79DEC001559C4 /* DoneUp@2x.png */,
+				D744CFFF16A79DC0001559C4 /* DoneDown@2x.png */,
+				D744D01616A7BDF7001559C4 /* DoneDown.png */,
+				D744D01716A7BDF7001559C4 /* DoneUp.png */,
 				D716056A16A688CE001B4819 /* MessageBox-Info.plist */,
 				D716056B16A688CE001B4819 /* InfoPlist.strings */,
 				D716056E16A688CE001B4819 /* main.m */,
@@ -159,6 +171,10 @@
 				D716056D16A688CE001B4819 /* InfoPlist.strings in Resources */,
 				D716057916A688CE001B4819 /* CPViewController_iPhone.xib in Resources */,
 				D716057C16A688CE001B4819 /* CPViewController_iPad.xib in Resources */,
+				D744D00116A79DC0001559C4 /* DoneDown@2x.png in Resources */,
+				D744D00416A79DEC001559C4 /* DoneUp@2x.png in Resources */,
+				D744D01816A7BDF7001559C4 /* DoneDown.png in Resources */,
+				D744D01916A7BDF7001559C4 /* DoneUp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +310,7 @@
 				D716058116A688CE001B4819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
