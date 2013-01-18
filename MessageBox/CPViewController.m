@@ -97,6 +97,10 @@
 
     
 }
+
+-(void)dismissKeyboard {
+    [messageTextField resignFirstResponder];
+}
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -105,6 +109,12 @@
 
     [self registerForKeyboardNotifications];
     keyboardWasShown = false;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] 
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)viewDidUnload
